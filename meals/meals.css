@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Merriweather:ital@1&family=Mochiy+Pop+One&family=Montserrat:wght@300&family=Nunito:wght@700&family=PT+Sans&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;1,400&family=Work+Sans:ital,wght@0,300;0,500;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Noto Serif";
+}
+:root {
+    --primary: #feb447;
+    --background: #fcfdd1;
+    --secondary: #feddaa;
+    --white: #ffffff;
+    --icon: #feb447;
+}
