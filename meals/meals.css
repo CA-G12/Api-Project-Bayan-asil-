@@ -14,4 +14,148 @@ html{
     --secondary: #feddaa;
     --white: #ffffff;
     --icon: #feb447;
+}body{
+    background: var(--background);
+}
+header{
+    font-family: "Mochiy Pop One";
+    font-size: larger;
+    font-weight: lighter;
+    font-size: 3rem;
+    color: var(--primary);
+    text-align: center;
+    padding: 1rem;
+}
+.container{
+    min-height: 10vh;
+    padding-left: 6rem;
+}
+.food-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15rem;
+    text-align: center;
+
+}
+.as{
+    padding-left: 2rem;
+}
+.food-search{
+    margin: 1rem 0;
+}
+
+.food-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,
+.search-btn{
+    width: 50%;
+    align-items: center;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0; 
+    border: 1px solid wheat;
+    color: orange;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder{
+    color:#feb447;
+}
+.search-btn{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: #feb447;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+ transition: all 0.4s ;
+ cursor: pointer;
+}
+.search-btn:hover{
+    transform: translate3D(0, -5px, 0);
+}
+
+
+.card-continer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: .5rem;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card-continer .card {
+    padding: 1rem;
+    padding-left: 1rem;
+width: 45%;
+display: flex;
+justify-content: space-between;
+
+}
+.card-continer .card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+.card-continer .card img:hover {
+    box-shadow: 2px 8px 45px var(--icon);
+    transform: translate3D(0, -9px, 0);
+  }
+.card-continer .card .info{
+    width: 70%;
+    padding-top: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-continer .card .info h3{
+    margin: 1rem 0;
+    font-family: "Mochiy Pop One";
+    font-size: larger;
+    font-weight: lighter;
+    color: var(--primary);
+}
+.card-continer .card .info p{
+    font-weight: 400;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+.buttons{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button a{
+    text-decoration: none;
+    color: white;
+}
+.buttons button{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color: var(--primary);
+    text-align: center;
+    font-size: small;
+    cursor: pointer;
+    color: white;
+    background: var(--icon);
+    font-family: "Mochiy Pop One";
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
 }
