@@ -201,6 +201,12 @@ justify-content: space-between;
 
 }
 
+.buttons button:hover , .buttons button a:hover{
+    color: var(--primary);
+    font-weight: bolder;
+    background: #ffffff;
+} 
+
 @media(max-width: 980px){
     .card-continer{
         flex-direction: column;
