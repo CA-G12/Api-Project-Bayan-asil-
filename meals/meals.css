@@ -158,6 +158,7 @@ justify-content: space-between;
 .card-continer .card .info{
     width: 70%;
     padding-top: 2rem;
+    padding-left: 1rem;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -207,7 +208,7 @@ justify-content: space-between;
     background: #ffffff;
 } 
 
-@media(max-width: 980px){
+@media(max-width: 1100px){
     .card-continer{
         flex-direction: column;
         flex-wrap: wrap;
@@ -215,9 +216,15 @@ justify-content: space-between;
     .card-continer .card{
         width: 90%
     }
+    .buttons{
+        padding-left: 3rem;
+    }
+    .food-wrapper{
+        padding-left: 3rem;
+    }
 }
 
-@media(max-width :600px){
+@media(max-width :750px){
     .card-continer{
         width: 100%;
         border: none;
@@ -241,6 +248,9 @@ justify-content: space-between;
     }
     .container{
         padding-left: 2rem;
+    }
+    .buttons{
+        padding-left: 0rem;
     }
 
 }
