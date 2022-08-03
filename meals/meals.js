@@ -1,5 +1,21 @@
 const cardContiner = document.querySelector(".card-continer")
 let input =document.querySelector("#search-input")
+const popUpContiner= document.querySelector(".po-up-continer")
+const popUp = document.querySelector(".po-up")
+const closeBtn = document.querySelector(".close")
+const para = document.querySelector(".para")
+
+closeBtn.addEventListener("click", ()=>{
+    popUpContiner.style.visibility="hidden";
+})
+popUpContiner.addEventListener("click",()=>{
+    popUpContiner.style.visibility="hidden"
+})
+const createpopUp =(ele)=>{
+    console.log(ele.strInstructions)
+    popUpContiner.style.visibility="visible";
+    para.textContent= ele.strInstructions;
+}
 
 const createCardEle =(ele)=>{
     const card = document.createElement("div")
@@ -36,6 +52,10 @@ const createCardEle =(ele)=>{
     videoBtn.appendChild(videoLink)
     const recipeBtn = document.createElement("button")
     recipeBtn.textContent="Recipe"
+    recipeBtn.addEventListener("click",(e)=>{
+        // e.preventDefault()
+        createpopUp(ele);
+    })
     recipeBtn.classList.add("recipe-btn")
     buttons.appendChild(videoBtn)
     buttons.appendChild(recipeBtn)
